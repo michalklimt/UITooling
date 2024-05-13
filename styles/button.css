@@ -1,0 +1,25 @@
+/*BUTTON CSS*/
+@import url(../styles/styles.css);
+
+.link-button {
+    padding: 8px 16px;
+    background: var(--color-action-primary);
+    border-radius: 99px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+    text-decoration: none;
+    color: var(--color-action-inverted);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family2);
+    font-weight: var(--font-weight-bold);
+    word-wrap: break-word;
+    transition: var(--color-background-hover) 0.3s;
+    cursor: pointer;
+}
+
+.link-button:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s ease;
+}

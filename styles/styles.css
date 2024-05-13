@@ -1,0 +1,234 @@
+
+@import url(./button.css);
+@import url(./card.css);
+@import url(./categorypage.css);
+@import url(./footer.css);
+@import url(./label.css);
+@import url(./header.css);
+@import url(./table.css);
+@import url(./utilities.css);
+
+:root {
+    /* COLOR VARIABLES */
+    /*Background*/
+    --color-background:#0F0F0F;
+    --color-background-box: rgba(255, 255, 255, 0.04);
+    --color-background-hover: #212121;
+    --color-background-highlighted:  rgba(255, 255, 255, 0.35);;
+    /*Text*/
+    --header-text-color: #FEBF4B;/*smazat*/
+    --color-text-tertiary: rgba(255, 255, 255, 0.60);
+    --color-text: rgba(255, 255, 255, 0.75);
+    --color-text-header: #FEBF4B;
+    --color-text-primary: rgba(255, 255, 255, 0.8);
+    --color-text-secondary: rgba(255, 255, 255, 0.60);
+    --color-text-inverted: #0F0F0F;
+    /*Border*/
+    --color-border: rgba(255, 255, 255, 0.2);
+    --color-border-hover: rgba(255, 255, 255, 0.3);
+    /*Action*/
+    --color-action-primary: var(--color-accent-10);
+    --color-action-primary-hover: var(--color-accent-10);
+    --color-action-inverted: black;
+    /*Category Custom Colors*/
+    --color-iconlib: #FEBF4B;
+    --color-iconlib-hover: #e6a741;
+    --color-accent-1: #BAFF4B;
+    --color-accent-2: #5EFC57;
+    --color-accent-3: #67FDBE;
+    --color-accent-4: #4FD5FF;
+    --color-accent-5: #4F9EFF;
+    --color-accent-6: #5E45FF;
+    --color-accent-7: #8C57FC;
+    --color-accent-8: #DB57FC;
+    --color-accent-9: #FF4487;
+    --color-accent-10: #FF4457;
+    --color-accent-11: #FF8244;
+    --color-accent-12: #FFC144;
+
+    --color-designsystem-pages: var(--color-accent-10);
+    --color-research-pages: var(--color-accent-2);
+
+
+    --link-hover-color: #e6a741;
+    /*Shadow*/
+    --shadow-color: rgba(0, 0, 0, 0.5);
+
+    /* TYPOGRAPHY VARIABLES */
+    --font-family2: 'Space Grotesk', sans-serif;
+    --font-family-basic: Helvetica, Arial, sans-serif;
+    --font-family-decorative: 'Space Grotesk', sans-serif;
+    --font-size-small: 14px;
+    --font-size-base: 16px;
+    --font-size-subheading: 22px;
+    --font-size-heading: 32px;
+    --font-size-display: 56px;
+    --font-size-display-mobile: 40px;
+    --font-weight-normal: 370;
+    --font-weight-bold: 500; /* Předpokládá se, že 551 je hodnota pro 'semi-bold' v Roboto Flex */
+    --letter-spacing: 0.32px;
+
+    /* Main Title Typography */
+    --main-title-line-height: 75px;
+    --main-title-letter-spacing: 0em;
+    --main-title-text-align: left;
+
+    /*Breakpoints*/
+    --breakpoint-tablet: 768px;
+
+}
+
+
+
+/*TEXT STYLES*/
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    color: var(--text-color);
+    background-color: var(--color-background);
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-family-decorative);
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: 0em;
+    color: var(--color-text-primary);
+}
+
+h1 {
+    font-size: var(--font-size-display);
+    font-weight: var(--font-weight-normal);
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: var(--font-size-display-mobile);
+    }
+}
+
+h2 {
+    font-size: var(--font-size-heading);
+}
+
+h3 {
+    font-size: var(--font-size-subheading);
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-basic);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: 0.06em;
+    line-height: 130%;
+}
+
+a {
+    font-family: var(--font-family-basic);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    color: var(--color-text);
+}
+
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+
+/*IMAGES*/
+
+.image-responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+/*LAYOUTS AND CONTAINERS*/
+
+.column {
+    flex: 1; /* Roztažení sloupců na plnou dostupnou šířku */
+    margin: 0 24px; /* Mezera mezi sloupci */
+}
+.columns-two{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px; /* Polovina mezer mezi sloupci pro vyrovnání na okrajích */
+    margin-right: -8px; /* Polovina mezer mezi sloupci pro vyrovnání na okrajích */
+}
+
+@media (max-width: 768px) {
+    .column {
+        margin: 0 0 16px 0;
+      }
+    .columns-two {
+      flex-direction: column;
+    }
+}
+
+.column-text {
+    max-width: 680px;
+}
+
+.intro-wrapper h1 {
+    max-width: 680px;
+    padding: 40px;
+    padding-bottom: 80px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-fullwidth {
+    padding-top: 40px;
+}
+@media (max-width: 768px) {
+    .section-fullwidth {
+        padding-top: 0px;
+    }
+}
+
+.section-fullwidth h1 {
+    max-width: 680px;
+    padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .section-fullwidth h1 {
+        max-width: 480px;
+    }
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    color: var(--color-text-primary);
+    padding-bottom: 40px;
+}
+
+.section-cards{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 0px;
+    padding-right: 00px;
+    margin-bottom: 0px;
+    border-color: 1px solid var(--color-border);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px 32px;
+}
+@media (max-width: 768px) {
+    .card-container {
+        gap: 8px 8px;
+    }
+}

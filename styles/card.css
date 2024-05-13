@@ -1,0 +1,48 @@
+/*CARD CSS*/
+@import url(../styles/styles.css);
+
+.card {
+  display: flex;
+  align-items: top; /*center*/
+  width: 100%;
+  max-width: 320px;
+  min-height: 240px;
+  padding: 0px;
+  transition: background-color 0.3s ease; /* Plynulá animace pro hover*/
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+
+  cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .card {
+      max-width: 768px;
+      min-height: 100px;
+    }
+  }
+  @media (min-width: 768px) {
+    .card:hover {
+        background-color: var(--color-background-hover);
+        transform: scale(1.02);
+        transition: transform 0.2s ease;
+    }
+  }
+
+
+.description-wrapper {
+  margin: 32px;
+}
+
+.description-wrapper h2{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.description-wrapper p {
+  margin: 0; /* Odstup popisku */
+}
+
+.card p {
+  font-size: var(--font-size-small);
+  color: var(--color-text-tertiary);
+}

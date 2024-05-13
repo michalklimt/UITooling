@@ -1,0 +1,24 @@
+/*HEADER CSS*/
+@import url(../styles/styles.css);
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .header {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.header-main-text {
+    font-family: var(--font-family-decorative);
+    font-size: var(--font-size-subheading);
+    color: var(--color-text);
+    text-decoration: none;
+}

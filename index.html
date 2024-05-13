@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Michal Klimt</title>
-  </head>
-  <body>
-    <p>Coming soon...</p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Dynamic Component Gallery</title>
+</head>
+<body>
+
+    <!-- INTRO -->
+    <div class="intro-wrapper">
+    <header>
+        <a href="./index.html" class="header-main-text"> UI TOOLING</a>
+    </header>
+        <div class="section-fullwidth">
+            <h1>Design tools for your UI project</h1>
+        </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="content-wrapper">
+
+        <!-- DESIGN SYSTEM TOOLS -->
+        <div class="section-cards">
+            <div class="card-container" >
+                <div class="card" onclick="location.href='./pages-category/icon-libraries-page.html';">
+                    <!--<img src="./imgs/Puzzle-narrow.jpg" alt="Img Category" class="photo">-->
+                    <div class="description-wrapper">
+                        <h2><mark style="background-color: var(--color-action-primary);">Icon <br>Libraries</mark></h2>
+                        <p>#Design-System-Tools #Figma</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='./pages-category/component-libraries-page.html';">
+                    <!--<img src="./imgs/Engineparts-narrow.jpg" alt="Img Category" class="photo">-->
+                    <div class="description-wrapper">
+                        <h2><mark style="background-color: var(--color-action-primary);">Component <br>Libraries<mark></h2>
+                            <p>#Design-System-Tools #Figma</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='./pages-category/visual-inspiration-page.html';">
+                    <!--<img src="./imgs/Gallery-narrow.jpg" alt="Img Category" class="photo">-->
+                    <div class="description-wrapper">
+                        <h2><mark style="background-color: var(--color-research-pages);">Visual <br>Inspiration</mark></h2>
+                        <p>#Discovery-Tools</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='./pages-category/design-data-analytics-page.html';">
+                    <!--<img src="./imgs/Observing-narrow.jpg" alt="Img Category" class="photo">-->
+                    <div class="description-wrapper">
+                        <h2><mark style="background-color: var(--color-research-pages);">Design Data <br>Analytics</mark></h2>
+                        <p>#Discovery-Tools</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- FOOTER -->  
+    <footer>
+        <a href="">Contact</a>
+    </footer>
+</body>
 </html>
